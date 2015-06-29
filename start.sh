@@ -15,7 +15,7 @@ if [ -f $CONFIG_DIR/config.sh ]; then
     $CONFIG_DIR/config.sh
 fi
 
-screen -dmS minecraft java -XX:MaxPermSize=128M -Xmx2600M -jar $SERVER_DIR/spigot.jar -o true nogui
+java -Xms$MINMEM -Xmx$MAXMEM $ADDPARAMS -jar spigot.jar
 
 /bin/bash
 
