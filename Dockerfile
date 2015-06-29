@@ -7,8 +7,7 @@ MAINTAINER Justin Sacbibit
 # Update package index
 RUN apt-get update && apt-get install -y \
     git \
-    openjdk-7-jre \
-    screen \
+    oracle-java8-installer \
     wget
 
 WORKDIR /minecraft
